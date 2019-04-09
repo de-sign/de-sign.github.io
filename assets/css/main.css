@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+/* UIKit Thème */
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-logo,
+h1, h2, h3, h4, h5, h6,
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle{
+    font-family: 'Montserrat';
+}
+
+.uk-card-title,
+.uk-text-primary,
+.uk-navbar-nav > li.uk-active > a{
+    color: #1a4982 !important;
+}
+
+/* Thème Perso */    
+header{
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .uk-background-default{
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+}
+
+.icon-next{
+    transform: rotate(90deg);
+    opacity: 0.5;
+    position: relative;
+    top: 0;
+    transition: opacity 0.5s ease-in-out, top 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.icon-next:hover{
+    opacity: 1;
+    top: 10px;
+}
+
+.uk-dark .icon-next:hover{
+    color: #1a4982;
+}
+
+#section-me .uk-grid > div:last-child{
+    align-self: center;
+}
+
+#section-sticky{
+    background-repeat: repeat-x;
+    height: 80px;
+}
+
+@media (max-width: 640px) {
+
+    footer .uk-grid > div{
+        text-align: center !important;
+    }
+    
+    footer li{
+        display: inline;
+    }
+
+    footer li::after,
+    footer li::before{
+        display: none  !important;
+    }
+    section .uk-text-right{
+        text-align: left !important;
+    }
+
+    #section-works .uk-slider .uk-position-bottom-left{
+        left: auto;
+        right: 0;
+    }
+}
