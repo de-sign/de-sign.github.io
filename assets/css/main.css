@@ -38,13 +38,12 @@ header .uk-background-default .uk-logo{
     transform: rotate(90deg);
     opacity: 0.5;
     position: relative;
-    top: 0;
-    transition: opacity 0.5s ease-in-out, top 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition: opacity 0.5s ease-in-out, transform 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.48);
 }
 
 .icon-next:hover{
     opacity: 1;
-    top: 10px;
+    transform: translateY(10px) rotate(90deg);
 }
 
 .uk-dark .icon-next:hover{
@@ -55,25 +54,17 @@ header .uk-background-default .uk-logo{
     align-self: center;
 }
 
-#section-sticky{
+.ds-border{
     background-repeat: repeat-x;
+    height: 30px;
+}
+
+.ds-border.ds-border--placeholder{
     height: 80px;
 }
 
 @media (max-width: 640px) {
-
-    footer .uk-grid > div{
-        text-align: center !important;
-    }
     
-    footer li{
-        display: inline;
-    }
-
-    footer li::after,
-    footer li::before{
-        display: none  !important;
-    }
     section .uk-text-right{
         text-align: left !important;
     }
@@ -81,6 +72,23 @@ header .uk-background-default .uk-logo{
     #section-works .uk-slider .uk-position-bottom-left{
         left: auto;
         right: 0;
+    }
+
+    footer .uk-grid > div{
+        text-align: center !important;
+    }
+
+    footer .uk-grid > div:last-child{
+        margin-top: 0;
+    }
+
+    footer li{
+        display: inline;
+    }
+
+    footer li::after,
+    footer li::before{
+        display: none  !important;
     }
 }
 
