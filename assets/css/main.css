@@ -3,6 +3,7 @@
 /* UIKit Thème */
 html{
     font-family: 'Lato', sans-serif;
+    background: radial-gradient(#017A99, #03507C);
 }
 
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-logo,
@@ -32,10 +33,6 @@ header .uk-background-default{
 
 header .uk-background-default .uk-logo{
     color: #1a4982;
-}
-
-main{
-    background: radial-gradient(#017A99, #03507C);
 }
 
 .icon-next{
