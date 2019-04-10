@@ -13,7 +13,8 @@ h1, h2, h3, h4, h5, h6,
 
 .uk-card-title,
 .uk-text-primary,
-.uk-navbar-nav > li.uk-active > a{
+.uk-navbar-nav > li.uk-active > a,
+.uk-logo{
     color: #1a4982 !important;
 }
 
