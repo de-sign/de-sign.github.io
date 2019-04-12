@@ -43,7 +43,7 @@ window.addEventListener('load', function(){
 					} else {
 						var cl = 'ts__touch',
 							pt = t.touches[ t.touches.length - 1 ],
-							r = 25,
+							r = 50,
 							a = 0;
 					}
 

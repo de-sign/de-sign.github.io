@@ -84,8 +84,9 @@ body{
 	width: 25px;
 	height: 25px;
 	position: absolute;
-	top: 0;
+	top: -500px;
+	bottom: -500px;
 	left: 50%;
-	transform: translate(-50%, -50%) rotate(45deg) skew(25deg, 25deg);
 	background-color: var(--black);
+	width: 1px;
 }
