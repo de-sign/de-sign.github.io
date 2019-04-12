@@ -71,6 +71,8 @@ body{
 	transform-origin: 50% 50%;
 	border-radius: 50%;
 	z-index: 100;
+	background-color: #fff;
+	
 }
 
 .ts__circle{
@@ -81,8 +83,8 @@ body{
 	content: '';
 	display: block;
 	position: absolute;
-	top: -500px;
-	bottom: 50px;
+	top: 75px;
+	bottom: -500px;
 	left: 50%;
 	background-color: var(--black);
 	width: 1px;
