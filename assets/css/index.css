@@ -73,8 +73,28 @@ header .uk-background-default .uk-logo{
         text-align: left !important;
     }
 
+    #section-works .uk-slider .uk-transition-fade{
+        opacity: 1;
+    }
+
+    #section-works .uk-slider .uk-position-cover{
+        display: none;
+    }
+
+    #section-works .uk-slider .uk-position-center{
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: none;
+        width: auto;
+        background-color: rgba(34,34,34,.8);
+    }
+
     #section-works .uk-slider .uk-position-bottom-left{
         left: auto;
+        bottom: auto;
+        top: 0;
         right: 0;
     }
 
