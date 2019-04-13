@@ -3,19 +3,45 @@
 <html lang="fr">
 
 	<head>
-		<meta charset="utf-8">
-
-		<title>Jérémy OUDOT - Concepteur, designer et dévellopeur WEB</title>
-		<meta name="description" content="Jérémy OUDOT - Concepteur, designer et dévellopeur WEB">
-		<meta name="author" content="Jérémy OUDOT">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="stylesheet" href="assets/css/vendor/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css">
-        <link rel="stylesheet" href="assets/css/main.css">
         
+        <!-- Primary Meta Tags -->
+		<meta charset="utf-8">
+        <title>Jérémy OUDOT</title>
+        <meta name="title" content="Jérémy OUDOT - Concepteur, designer et développeur WEB">
+        <meta name="description" content="Après l'obtention de mon BTS IRIS, j'ai progressé en autodidacte sur le développement lié au Web. C'est à ce moment précis que j'ai compris que je voulais en faire mon métier.">
+		<meta name="author" content="Jérémy OUDOT">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#1a4982"/>
+        <link rel="canonical" href="https://de-sign.github.io/">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://de-sign.github.io/">
+        <meta property="og:title" content="Jérémy OUDOT - Concepteur, designer et développeur WEB">
+        <meta property="og:description" content="Après l'obtention de mon BTS IRIS, j'ai progressé en autodidacte sur le développement lié au Web. C'est à ce moment précis que j'ai compris que je voulais en faire mon métier.">
+        <meta property="og:image" content="https://de-sign.github.io/assets/images/meta.jpg">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://de-sign.github.io/">
+        <meta property="twitter:title" content="Jérémy OUDOT - Concepteur, designer et développeur WEB">
+        <meta property="twitter:description" content="Après l'obtention de mon BTS IRIS, j'ai progressé en autodidacte sur le développement lié au Web. C'est à ce moment précis que j'ai compris que je voulais en faire mon métier.">
+        <meta property="og:image" content="https://de-sign.github.io/assets/images/meta.jpg">
+
+        <!-- FavIcon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        
+        <!-- JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+        
 	</head>
 
 	<body>
@@ -35,7 +61,7 @@
                         <div class="uk-navbar-center-right">
                             <div>
                                 <ul class="uk-navbar-nav">
-                                    <li><a href="#section-works">Travaux</a></li>
+                                    <li><a href="#section-works">Projets</a></li>
                                     <li><a href="#section-contact">Contact</a></li>
                                 </ul>
                             </div>
@@ -45,43 +71,47 @@
             </div>
         </header>
         
-        <main class="uk-background-cover uk-background-fixed" data-src="https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?cs=srgb&dl=backgrounds-blank-blue-953214.jpg&fm=jpg" uk-img>
-        
-            <section id="section-home" class="uk-section uk-padding-remove uk-light">
-                <div class="uk-container uk-container-expand uk-position-relative uk-height-viewport" >
-                    <div class="uk-overlay uk-position-center uk-text-center">
-                        <h1 class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 250; repeat: true">Jérémy OUDOT</h1>
-                        <h3 class="uk-margin-remove-top uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 250; repeat: true">
-                            Concepteur, Designer<br/>
-                            & Développeur WEB
-                        </h3>
-                    </div>
+        <main>
+
+            <div class="ds-background uk-background-cover uk-background-fixed">
+                <div class="uk-background-cover uk-background-fixed" data-src="assets/images/background.jpg" uk-img>
+                    <section id="section-home" class="uk-section uk-padding-remove uk-light">
+                        <div class="uk-container uk-container-expand uk-position-relative uk-height-viewport" >
+                            <div class="uk-overlay uk-position-center uk-text-center">
+                                <h1 class="uk-margin-small-bottom uk-heading-primary" uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 250; repeat: true">Jérémy OUDOT</h1>
+                                <h2 class="uk-h3 uk-margin-remove-top uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 250; repeat: true">
+                                    Concepteur, Designer<br/>
+                                    & Développeur WEB
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="uk-overlay uk-position-bottom uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 750; repeat: true">
+                            <a aria-label="Navigation section Moi" href="#section-me" class="icon-next" uk-icon="icon: play-circle; ratio: 1.5" uk-scroll="offset: 80" ></a>
+                        </div>
+                    </section>
+                    
+                    <div class="ds-border ds-border--placeholder uk-section uk-background-bottom-center" data-src="assets/images/border.png" uk-img></div>
                 </div>
-                <div class="uk-overlay uk-position-bottom uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 750; repeat: true">
-                    <a href="#section-me" class="icon-next" uk-icon="icon: play-circle; ratio: 1.5" uk-scroll="offset: 80" ></a>
-                </div>
-            </section>
-        
-            <section id="section-sticky" class="uk-section uk-background-bottom-center" data-src="https://demo.yootheme.com/themes/joomla/2015/finch/templates/yoo_finch/images/default/block_texture_border_default.png" uk-img></section>
+            </div>
         
             <section id="section-me" class="uk-section uk-section-default uk-padding-remove uk-position-relative">
                 <div class="uk-container uk-container uk-padding-remove">
                     <div class=" uk-child-width-1-1" uk-grid uk-height-viewport="offset-bottom: 80px">
-                        <div class="uk-width-1-3@s uk-width-1-2@m uk-flex uk-flex-column uk-flex-right uk-flex-middle" uk-scrollspy="cls: uk-animation-fade; delay: 250">
-                            <img src="assets/images/owner.png" width="500" height="500" />
+                        <div class="uk-width-1-3@s uk-width-1-2@m uk-flex uk-flex-column uk-flex-right uk-flex-middle" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 250">
+                            <img src="assets/images/owner.png" width="300" height="494" alt="Portrait Jérémy OUDOT" />
                         </div>
                         <div class="uk-width-2-3@s uk-width-1-2@m uk-flex-first uk-flex-last@s">
                             <div class="uk-padding-large" uk-scrollspy="cls: uk-animation-slide-right; delay: 250">
-                                <h2 class="uk-margin-remove-bottom uk-text-primary">TOUJOURS EN CONSTANTE ÉVOLUTION</h2>
+                                <h2 class="uk-margin-remove-bottom uk-text-primary uk-text-uppercase">Toujours en constante évolution</h2>
                                 <p>
                                     Après l'obtention de mon BTS Informatique et Réseaux pour l'Industrie et les Services Techniques, j'ai progressé en autodidacte
-                                    sur le développement lié aux Web. C'est à ce moment précis que j'ai compris que je voulais en faire un métier.
+                                    sur le développement lié au Web. C'est à ce moment précis que j'ai compris que je voulais en faire mon métier.
                                 </p>
                                 <p>
-                                    Suite aux tâches qu'il m'a été confié durant mes heures de travail, j'ai commencé récemment à me prendre aussi pour passion du Web Design.
+                                    Suite aux tâches qu'il m'ont été confiées durant mes heures de travail, j'ai commencé récemment à me passionner pour le Web Design.
                                 </p>
                                 <p>
-                                    En plus d'être très soucieux de la qualité et du résultat de mon travail, je peux m'adapter rapidement à un nouveau contexte et environnement de travail, ce qui me permet de travailler en équipe tout en étant polyvalent et autonome.
+                                    En plus d'être très soucieux de la qualité et du résultat de mon travail, je peux m'adapter rapidement à un nouvel environnement, ce qui me permet de travailler en équipe tout en étant polyvalent et autonome.
                                 </p>
                                 <p>
                                     Je suis également ouvert à toute proposition de formations complémentaires me permettant d’approfondir mes connaissances mais aussi d’acquérir les compétences nécessaires à vos attentes.
@@ -90,18 +120,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-overlay uk-dark uk-position-bottom uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 750; repeat: true">
-                    <a href="#section-skills" class="icon-next" uk-icon="icon: play-circle; ratio: 1.5" uk-scroll="offset: 80" ></a>
+                <div class="uk-overlay uk-dark uk-position-bottom uk-text-center uk-visible@s" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 750; repeat: true">
+                    <a aria-label="Navigation section Compétences" href="#section-skills" class="icon-next" uk-icon="icon: play-circle; ratio: 1.5" uk-scroll="offset: 80" ></a>
                 </div>
             </section>
         
             <section id="section-skills" class="uk-section uk-section-muted uk-position-relative">
                 <div class="uk-container uk-container-small uk-text-center">
-                    <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-center" uk-grid uk-scrollspy="target: > div; cls: uk-animation-scale-up; delay: 250">
+                    <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-center" uk-grid uk-scrollspy="target: > div; cls: uk-animation-scale-up; delay: 250" uk-height-viewport="offset-bottom: 80px">
                         <div>
                             <div class="uk-card">
                                 <div class="uk-card-media-top">
-                                    <img src="http://images.tuto.net/software/100/100/html.jpg" alt="">
+                                    <img src="assets/images/skills/html.jpg" alt="Logo HTML 5" width="100" heigh="100">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title">HTML 5</h3>
@@ -113,7 +143,7 @@
                         <div>
                             <div class="uk-card">
                                 <div class="uk-card-media-top">
-                                    <img src="http://appventus.com/uploads/media/54b94445e205f.png" alt="">
+                                    <img src="assets/images/skills/css.png" alt="Logo CSS 3" width="100" heigh="100">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title">CSS 3</h3>
@@ -125,11 +155,11 @@
                         <div>
                             <div class="uk-card">
                                 <div class="uk-card-media-top">
-                                    <img src="https://www.audero.it/blog/wp-content/uploads/2015/06/sass-logo.png" alt="">
+                                        <img src="assets/images/skills/sass.png" alt="Logo SASS" width="100" heigh="100">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title">Sass</h3>
-                                    <p>Segmenter et structurer ses feuilles de style est primordiale pour les grands projets.</p>
+                                    <p>Segmenter et structurer ses feuilles de style est primordial pour les grands projets.</p>
                                 </div>
                             </div>
                         </div>
@@ -137,11 +167,11 @@
                         <div>
                             <div class="uk-card">
                                 <div class="uk-card-media-top">
-                                    <img src="https://www.e-systemes.com/assets/dyn-img/bibliotheque/logo-javascript.png" alt="">
+                                        <img src="assets/images/skills/js.png" alt="Logo Javascript" width="100" heigh="100">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title">JS ES6</h3>
-                                    <p>Qu'est-ce-qu'un site sans interactions ? Mais attention à l'optimisation !</p>
+                                    <p>Qu'est-ce qu'un site sans interaction&nbsp;? Mais attention à l'optimisation&nbsp;!</p>
                                 </div>
                             </div>
                         </div>
@@ -149,11 +179,11 @@
                         <div>
                             <div class="uk-card">
                                 <div class="uk-card-media-top">
-                                    <img src="https://www.neerjasoftwares.com/sites/default/files/php.png" alt="">
+                                        <img src="assets/images/skills/php.png" alt="Logo PHP 7" width="100" heigh="100">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title">PHP 7</h3>
-                                    <p>Language qui fût et est encore à la mode pour toute la partie back-office.</p>
+                                    <p>Langage qui fût et reste encore à la mode pour toute la partie back-office.</p>
                                 </div>
                             </div>
                         </div>
@@ -161,142 +191,158 @@
                         <div>
                             <div class="uk-card">
                                 <div class="uk-card-media-top">
-                                    <img src="https://framalibre.org/sites/default/files/styles/thumbnail/public/leslogos/2000px-Mysql-dolphin-square.svg_.png?itok=qmDwIN29" alt="">
+                                        <img src="assets/images/skills/mysql.png" alt="Logo MySql 7" width="100" heigh="100">
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title">MySQL</h3>
-                                    <p>Comment avoir un site actif ? Modifié le contenu de ses bases de données.</p>
+                                    <p>Comment avoir un site actif&nbsp;? 
+                                        Modifier le contenu de ses bases de données&nbsp;!</p>
                                 </div>
                             </div>
                         </div>
         
                     </div>
                 </div>
-                <div class="uk-overlay uk-dark uk-position-bottom uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 750; repeat: true">
-                    <a href="#section-works" class="icon-next" uk-icon="icon: play-circle; ratio: 1.5" uk-scroll="offset: 80" ></a>
+
+                <div class="uk-overlay uk-dark uk-position-bottom uk-text-center uk-visible@s" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 750; repeat: true">
+                    <a aria-label="Navigation section Travaux" href="#section-works" class="icon-next" uk-icon="icon: play-circle; ratio: 1.5" uk-scroll="offset: 80" ></a>
                 </div>
             </section>
         
             <section id="section-works" class="uk-section uk-section-muted uk-section-small uk-padding-remove uk-position-relative">
-                <div class="uk-container uk-container-expand uk-padding-remove uk-grid-match uk-flex-middle" uk-grid uk-height-viewport="offset-bottom: 80px">
-                    <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-3@m" uk-scrollspy="cls: uk-animation-slide-left; delay: 250">
-                        <div class="uk-padding-large uk-text-right">
-                            <h2 class="uk-margin-remove-bottom uk-text-primary">TRAVAUX DE WEBDESIGN</h2>
-                            <p>
-                                Voici la liste de mes différents projets de WebDesgin que vous pouvez visualiser.
-                            </p>
-                            <p>
-                                Je vais étoffer cette dernière de manière récurrente.
-                            </p>
-                            <p>
-                                N'hésitez pas à revenir voir si de nouveaux projets apparaissent !
-                            </p>
+                <div class="uk-container uk-container-expand uk-padding-remove">
+                    <div class="uk-grid-match uk-flex-middle" uk-grid uk-height-viewport="offset-bottom: 80px">
+                        <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-3@m" uk-scrollspy="cls: uk-animation-slide-left; delay: 250">
+                            <div class="uk-padding-large uk-text-right">
+                                <h2 class="uk-margin-remove-bottom uk-text-primary uk-text-uppercase">Projets</h2>
+                                <p>
+                                    Voici la liste de mes différents projets de développement ou de Web Design que vous pouvez visualiser.
+                                </p>
+                                <p>
+                                    Je vais étoffer cette dernière de manière récurrente.
+                                </p>
+                                <p>
+                                    N'hésitez pas à revenir voir mes futurs projets&nbsp;!
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="uk-width-1-1 uk-width-1-2@s uk-width-2-3@m" uk-scrollspy="cls: uk-animation-fade; delay: 250">
-                        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider>
-                            <!-- uk-child-width-1-3@m -->
-                            <ul class="uk-light uk-slider-items uk-grid uk-grid-collapse uk-grid-match uk-child-width-1-1 uk-height-large" >
-                                <li>
-                                    <a class="uk-cover-container uk-transition-toggle" href="src/html/abstract.html" target="_blank">
-                                        <img src="assets/images/works/abstract.png" uk-cover />
-                                        <div class="uk-transition-fade">
-                                            <div class="uk-overlay uk-overlay-primary uk-position-cover"></div>
-                                            <div class="uk-overlay uk-position-center">
-                                                <h3>
-                                                    <span class="uk-transition-fade" uk-icon="icon: link"></span>
-                                                    Abstract
-                                                </h3>
+                        <div class="uk-width-1-1 uk-width-1-2@s uk-width-2-3@m" uk-scrollspy="cls: uk-animation-fade; delay: 250">
+                            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider>
+                                <!-- uk-child-width-1-3@m -->
+                                <ul class="uk-light uk-slider-items uk-grid uk-grid-collapse uk-grid-match uk-child-width-1-1 uk-child-width-1-2@m uk-height-large" >
+                                    <li>
+                                        <a class="uk-cover-container uk-transition-toggle" href="abstract.html" target="_blank">
+                                            <img src="assets/images/works/abstract.jpg" uk-cover alt="Image du site Abstract" />
+                                            <div class="uk-transition-fade">
+                                                <div class="uk-overlay uk-overlay-primary uk-position-cover"></div>
+                                                <div class="uk-overlay uk-position-center uk-text-center">
+                                                    <h3 class="uk-h2 uk-margin-remove-bottom">Abstract</h3>
+                                                    <span class="uk-h3 uk-margin-remove-top uk-text-muted">design</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-        
-                            <div class="uk-dark uk-position-bottom-left uk-background-muted uk-padding-small">
-                                <a class="uk-margin-small-right" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                <a href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="uk-cover-container uk-transition-toggle" href="ts-event.html" target="_blank">
+                                            <img src="assets/images/works/ts-event.jpg" uk-cover alt="Image du site TSEvent" />
+                                            <div class="uk-transition-fade">
+                                                <div class="uk-overlay uk-overlay-primary uk-position-cover"></div>
+                                                <div class="uk-overlay uk-position-center uk-text-center">
+                                                    <h3 class="uk-h2 uk-margin-remove-bottom">TSEvent</h3>
+                                                    <span class="uk-h3 uk-margin-remove-top uk-text-muted">javascript</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+            
+                                <div class="uk-dark uk-position-bottom-left uk-background-muted uk-padding-small">
+                                    <a aria-label="Navigation travaux précédents" class="uk-margin-small-right" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a aria-label="Navigation travaux suivants" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="uk-overlay uk-dark uk-position-bottom uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 750; repeat: true">
-                    <a href="#section-contact" class="icon-next" uk-icon="icon: play-circle; ratio: 1.5" uk-scroll="offset: 80" ></a>
+
+                <div class="uk-overlay uk-dark uk-position-bottom uk-text-center uk-visible@s" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 750; repeat: true">
+                    <a aria-label="Navigation section Contact" href="#section-contact" class="icon-next" uk-icon="icon: play-circle; ratio: 1.5" uk-scroll="offset: 80" ></a>
                 </div>
             </section>
         </main>
         
+        <div class="ds-border uk-section uk-background-muted uk-background-bottom-center uk-padding-remove" data-src="assets/images/border.png" uk-img></div>
+        
         <footer id="section-contact" class="uk-section uk-section-default uk-section-small">
             <div class="uk-container">
-                <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-flex-middle" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-                    <div class="uk-flex-last@s">
-                        <div class="uk-child-width-1-1 uk-child-width-auto@m" uk-grid>
-                            <div>
-                                <address>
-                                    <div class="uk-h4 uk-margin-remove uk-text-primary">Jérémy OUDOT</div>
-                                    <div>3 rue des Chenevières</div>
-                                    <div>70300 Velorcey</div>
-                                </address>
-                            </div>
-                            <div>
-                                </ul class="uk-list">
-                                    <li>
-                                        <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="tel:+33613066215">
-                                            <span class="uk-margin-small-right" uk-icon="icon: receiver"></span>
-                                            <span>06 13 06 62 15</span>
-                                        </a>
-                                    </li>
-                                    <li class="uk-margin-remove">
-                                        <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="mailto:oudot.jeremy@laposte.net">
-                                            <span class="uk-margin-small-right" uk-icon="icon: mail"></span>
-                                            <span>oudot.jeremy@laposte.net</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+                    <div>
+                        <address>
+                            <div class="uk-h4 uk-margin-remove uk-text-primary">Jérémy OUDOT</div>
+                            3 rue des Chenevières<br/>
+                            70300 Velorcey
+                        </address>
                     </div>
-                    <div class="uk-text-right">
-                        <div class="uk-child-width-1-1 uk-child-width-auto@m uk-flex-right" uk-grid>
-                            <div>
-                                <ul class="uk-list">
-                                    <li>
-                                        <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://github.com/de-sign" target="_blank">
-                                            <span class="uk-flex-last@s uk-margin-small-left uk-margin-small-right" uk-icon="icon: github"></span>
-                                            <span>Github</span>
-                                        </a>
-                                    </li>
-                                    <li class="uk-margin-remove">
-                                        <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://twitter.com/__Wheel_s" target="_blank">
-                                            <span class="uk-flex-last@s uk-margin-small-left uk-margin-small-right" uk-icon="icon: twitter"></span>
-                                            <span>Twitter</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="uk-margin-remove">
-                                <ul class="uk-list">
-                                    <li class="uk-margin-remove">
-                                        <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://www.linkedin.com/in/jérémy-oudot-41b1a8124" target="_blank">
-                                            <span class="uk-flex-last@s uk-margin-small-left uk-margin-small-right" uk-icon="icon: linkedin"></span>
-                                            <span>LinkedIn</span>
-                                        </a>
-                                    </li>
-                                    <li class="uk-margin-remove">
-                                        <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://www.pinterest.fr/leroux70/" target="_blank">
-                                            <span class="uk-flex-last@s uk-margin-small-left uk-margin-small-right" uk-icon="icon: pinterest"></span>
-                                            <span>Pinterest</span>
-                                        </a>
-                                    </li>
-                                    <li class="uk-margin-remove">
-                                        <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://www.instagram.com/__de_sign/" target="_blank">
-                                            <span class="uk-flex-last@s uk-margin-small-left uk-margin-small-right" uk-icon="icon: instagram"></span>
-                                            <span>Instagram</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div>
+                        <ul class="uk-list">
+                            <li>
+                                <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="tel:+33613066215">
+                                    <span class="uk-margin-small-left uk-margin-small-right" uk-icon="icon: receiver"></span>
+                                    <span>06 13 06 62 15</span>
+                                </a>
+                            </li>
+                            <li class="uk-margin-remove">
+                                <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="mailto:oudot.jeremy@laposte.net">
+                                    <span class="uk-margin-small-left uk-margin-small-right" uk-icon="icon: mail"></span>
+                                    <span>oudot.jeremy@laposte.net</span>
+                                </a>
+                            </li>
+                            <li class="uk-margin-remove">
+                                <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://cvdesignr.com/public/5cacccbd6733d" target="_blank" rel="noopener nofollow" >
+                                    <span class="uk-margin-small-left uk-margin-small-right" uk-icon="icon: file-text"></span>
+                                    <span>Curriculum vitæ</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-list">
+                            <li class="uk-margin-remove">
+                                <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://www.linkedin.com/in/jérémy-oudot-41b1a8124" target="_blank" rel="noreferrer noopener nofollow">
+                                    <span class="uk-margin-small-left uk-margin-small-right" uk-icon="icon: linkedin"></span>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </li>
+                            <li class="uk-margin-remove">
+                                <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://www.pinterest.fr/leroux70/" target="_blank" rel="noreferrer noopener nofollow">
+                                    <span class="uk-margin-small-left uk-margin-small-right" uk-icon="icon: pinterest"></span>
+                                    <span>Pinterest</span>
+                                </a>
+                            </li>
+                            <li class="uk-margin-remove">
+                                <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://www.instagram.com/__de_sign/" target="_blank" rel="noreferrer noopener nofollow">
+                                    <span class="uk-margin-small-left uk-margin-small-right" uk-icon="icon: instagram"></span>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-list">
+                            <li>
+                                <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://github.com/de-sign" target="_blank" rel="noreferrer noopener nofollow">
+                                    <span class="uk-margin-small-left uk-margin-small-right" uk-icon="icon: github"></span>
+                                    <span>Github</span>
+                                </a>
+                            </li>
+                            <li class="uk-margin-remove">
+                                <a class="uk-text-muted uk-flex-inline uk-flex-middle" href="https://twitter.com/__Wheel_s" target="_blank" rel="noreferrer noopener nofollow">
+                                    <span class="uk-margin-small-left uk-margin-small-right" uk-icon="icon: twitter"></span>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
