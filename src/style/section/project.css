@@ -1,0 +1,114 @@
+#TPL__Project {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 150px 0 0;
+    min-height: calc(100vh + 150px);
+}
+
+.DS__Project {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-top: 5px solid var(--theme-color);
+    background-image: var(--url);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+
+    transition: border-color var(--theme-transition-duration) var(--theme-transition-function),
+        flex var(--theme-transition-duration) var(--theme-transition-function);
+}
+
+.DS__Project:last-child {
+    border-bottom: 5px solid var(--theme-color);
+}
+
+.DS__Project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--theme-bg-color);
+    z-index: 10;
+    opacity: 0.8;
+
+    transition: background-color var(--theme-transition-duration) var(--theme-transition-function),
+        opacity var(--theme-transition-duration) var(--theme-transition-function);
+}
+
+.DS__Project > * {
+    position: relative;
+    z-index: 100;
+
+    text-shadow: 1px 0 0 var(--theme-inverse-color),
+            1px 1px 0 var(--theme-inverse-color),
+            0 1px 0 var(--theme-inverse-color),
+            -1px 1px 0 var(--theme-inverse-color),
+            -1px 0 0 var(--theme-inverse-color),
+            -1px -1px 0 var(--theme-inverse-color),
+            0 -1px 0 var(--theme-inverse-color),
+            1px -1px 0 var(--theme-inverse-color);
+}
+
+.DS__Project h1 {
+    font-size: 64px;
+    white-space: nowrap;
+    text-align: center;
+    position: absolute;
+    animation: var(--speed) linear var(--delay) infinite normal both running DS__Project_slide;
+    opacity: 0.5;
+    transform: translateX(-50%);
+
+    transition: text-shadow var(--theme-transition-duration) var(--theme-transition-function),
+        opacity var(--theme-transition-duration) var(--theme-transition-function),
+        margin var(--theme-transition-duration) var(--theme-transition-function);
+}
+
+.DS__Project:nth-child(even) h1 {
+    animation-direction: reverse;
+}
+
+.DS__Project_Explain {
+    max-width: 650px;
+    margin: 0 auto;
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+
+    transition: max-height calc( var(--theme-transition-duration) / 2 ) linear;
+}
+
+.DS__Project_Explain h2 {
+    text-align: left;
+    padding: 0 25px 0 0;
+    position: relative;
+}
+
+.DS__Project_Explain span {
+    display: block;
+    text-align: right;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+
+.DS__Project:hover {
+    flex: 2 2 100%;
+}
+
+.DS__Project:hover::before {
+    opacity: 0.2;
+}
+
+.DS__Project:hover h1 {
+    opacity: 0;
+}
+
+.DS__Project:hover .DS__Project_Explain {
+    max-height: 350px;
+}

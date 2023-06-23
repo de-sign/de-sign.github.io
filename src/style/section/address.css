@@ -1,0 +1,54 @@
+#TPL__Address address {
+    font-style: normal;
+}
+
+.DS__Infos {
+    align-items: flex-end;
+
+    animation: 0.75s ease-out 0s 1 normal both paused DS__Address_appear;
+}
+
+.--show .DS__Infos {
+    animation-play-state: running;
+}
+
+.DS__Infos > *:first-child {
+    text-align: right;
+}
+
+.DS__Infos h3 {
+    margin-top: 0;
+}
+
+
+#TPL__Address .DS__Nav li {
+    align-items: flex-end;
+
+    animation: 0.75s ease-out var(--delay) 1 normal both paused DS__Address_appear;
+}
+
+#TPL__Address.--show .DS__Nav li {
+    animation-play-state: running;
+}
+
+
+#TPL__Address .DS__Nav img {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    filter: var(--theme-filter);
+    
+    transition: filter var(--theme-transition-duration) var(--theme-transition-function);
+}
+
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+    .DS__Infos > * {
+        text-align: center !important;
+    }
+
+    .DS__Infos > *:first-child {
+        padding-bottom: 0;
+    }
+}

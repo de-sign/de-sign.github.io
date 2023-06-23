@@ -1,0 +1,153 @@
+@keyframes DS__Chat_appear {
+	0% {
+		opacity: 0;
+		transform: translateY( calc( (-75vh / 2) + 64px ) ) scale(0, 0);
+		border-radius: 50%;
+	}
+	
+	20% {
+		opacity: 1;
+		transform: translateY( calc( (-75vh / 2) + 64px ) ) scale(1, 1);
+		border-radius: 50%;
+	}
+	
+	40% {
+		opacity: 1;
+		transform: translateY( calc( (-75vh / 2) + 64px ) ) scale(1, 1);
+		border-radius: 10px;
+	}
+	
+	80% {
+		opacity: 1;
+		transform: translateY( calc( (-75vh / 2) + 64px ) ) scale(1, 1);
+		border-radius: 10px;
+	}
+	
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+		border-radius: 10px;
+	}
+}
+
+@keyframes DS__Chat_appear_phone {
+	0% {
+		opacity: 0;
+		transform: translate(calc(50vw - 65px), calc(-50vh + 57px) ) scale(0, 0);
+		border-radius: 50%;
+	}
+	
+	20% {
+		opacity: 1;
+		transform: translate(calc(50vw - 65px), calc(-50vh + 57px) ) scale(1, 1);
+		border-radius: 50%;
+	}
+	
+	40% {
+		opacity: 1;
+		transform: translate(calc(50vw - 65px), calc(-50vh + 57px) ) scale(1, 1);
+		border-radius: 10px;
+	}
+	
+	60% {
+		opacity: 1;
+		transform: translate(calc(50vw - 65px), calc(-50vh + 57px) ) scale(1, 1);
+		border-radius: 10px;
+	}
+	
+	80% {
+		opacity: 1;
+		transform: translate(calc(50vw - 65px), 0 ) scale(1, 1);
+		border-radius: 10px;
+	}
+	
+	90% {
+		opacity: 1;
+		transform: translate(calc(50vw - 65px), 0 ) scale(1, 1);
+		border-radius: 10px;
+	}
+	
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+		border-radius: 10px;
+	}
+}
+
+@keyframes DS__Chat_show {
+	from {
+		opacity: 0;
+		width: 0;
+	}
+	
+	to {
+		opacity: 1;
+		width: 100%;
+	}
+}
+
+@keyframes DS__Chat_talk {
+	0% {
+		transform: scale(1, 1);
+	}
+	
+	25% {
+		transform: scale(0.9, 1.1);
+	}
+	
+	50% {
+		transform: scale(1, 1);
+	}
+	
+	75% {
+		transform: scale(1.1, 0.9);
+	}
+	
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes DS__Project_slide {
+	from {
+		margin-left: -25%;
+	}
+
+	to {
+		margin-left: 125%;
+	}
+}
+
+@keyframes DS__Address_appear {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes DS__Opacity {
+	from {
+		opacity: 0;
+	}
+	
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes DS__Appear {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}

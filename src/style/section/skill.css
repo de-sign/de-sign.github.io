@@ -1,0 +1,74 @@
+.DS__Skill {
+    text-align: center;
+    padding: 50px;
+    cursor: pointer;
+
+    animation: 0.5s ease-out var(--delay) 1 normal both paused DS__Appear;
+}
+
+.--show .DS__Skill {
+    animation-play-state: running;
+}
+
+.DS__Skill img {
+    border: 0;
+    margin: 0 auto 50px;
+    display: block;
+    filter: var(--theme-filter);
+    transform: rotate(0);
+
+    transition: transform var(--theme-transition-duration) var(--theme-transition-function),
+        filter var(--theme-transition-duration) var(--theme-transition-function);
+}
+
+.DS__Skill h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.DS__Skill h2::after {
+    content: '';
+    height: 5px;
+    background-color: var(--theme-color);
+    width: 0;
+    display: block;
+    margin: 10px -25px 0;
+
+    transition: width var(--theme-transition-duration) var(--theme-transition-function);
+}
+
+.DS__Skill ul {
+    margin: 0;
+    padding: 0;
+}
+
+.DS__Skill li {
+    list-style: none;
+    text-align: left;
+}
+
+.DS__Skill li > *:first-child {
+    text-align: right;
+}
+
+
+.DS__Skill:hover img {
+    transform: rotate(360deg);
+}
+
+.DS__Skill:nth-child(2n):hover img {
+    transform: rotate(-360deg);
+}
+
+.DS__Skill:hover h2::after {
+    width: calc(100% + 50px);
+}
+
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+    .DS__Skill {
+        animation-delay: var(--delay-phone);
+    }
+}

@@ -1,0 +1,163 @@
+.DS__Section {
+    padding: 50px 0;
+}
+
+.DS__Section:not(.--fluid) {
+    min-height: 100vh;
+}
+
+.DS__Content {
+    padding: 25px;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.DS__Section > .DS__Content {
+    padding: 0 25px;
+}
+
+
+.DS__Nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DS__Nav li {
+    list-style: none;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.DS__Nav a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.DS__Nav h3 {
+    font-size: 64px;
+    margin: 0;
+    font-weight: normal;
+}
+
+
+.DS__Flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DS__Flex > * {
+    flex: 1 1 50%;
+}
+
+
+.DS__Grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DS__Grid {
+    flex-wrap: wrap;
+}
+
+.DS__Grid > * {
+    flex: 1 1 25%;
+}
+
+
+/* Tablet */
+.--tablet-show {
+    display: none !important;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .--tablet-show {
+        display: initial !important;
+    }
+
+    .--tablet-hide {
+        display: none !important;
+    }
+
+
+    .DS__Flex.--tablet {
+        display: block;
+    }
+
+
+    .DS__Grid > * {
+        flex: 1 1 32%;
+    }
+
+    .DS__Grid.--tablet {
+        display: block;
+    }
+}
+
+
+/* Tablet Portrait */
+.--portrait-show { 
+    display: none !important;
+}
+
+@media screen and (max-width: 960px) {
+
+    .--portrait-show {
+        display: initial !important;
+    }
+
+    .--portrait-hide {
+        display: none !important;
+    }
+
+
+    .DS__Flex.--portrait {
+        display: block;
+    }
+
+    
+    .DS__Grid > * {
+        flex: 1 1 50%;
+    }
+
+    .DS__Grid.--portrait {
+        display: block;
+    }
+
+}
+
+
+/* Mobile */
+.--phone-show {
+    display: none !important;
+}
+
+@media screen and (max-width: 640px) {
+
+    .--phone-show {
+        display: initial !important;
+    }
+
+    .--phone-hide {
+        display: none !important;
+    }
+
+
+    .DS__Flex.--phone {
+        display: block;
+    }
+
+
+    .DS__Grid > * {
+        flex: 1 1 25%;
+    }
+
+    .DS__Grid.--phone {
+        display: block;
+    }
+}

@@ -1,0 +1,113 @@
+:root {
+
+    --black-color: #2E2E2C;
+    --grey-dark-color: #63635F;
+    --grey-light-color: #E3E3DA;
+	--white-color: #F0F0F0;
+	--red-color: #FF0148;
+	--yellow-color: #F3DF49;
+	--green-color: #1BF8B9;
+	--blue-color: #485AF9;
+
+	--theme-dark-bg-color: var(--black-color);
+	--theme-dark-color: var(--white-color);
+	--theme-dark-grey-color: var(--grey-light-color);
+	--theme-dark-inverse-color: var(--black-color);
+	--theme-dark-filter: invert(1);
+
+	--theme-light-bg-color: var(--white-color);
+	--theme-light-color: var(--black-color);
+	--theme-light-grey-color: var(--grey-dark-color);
+	--theme-light-inverse-color: var(--white-color);
+	--theme-light-filter: invert(0);
+
+	--theme-red-bg-color: var(--red-color);
+	--theme-red-color: var(--white-color);
+	--theme-red-grey-color: var(--grey-light-color);
+	--theme-red-inverse-color: var(--black-color);
+	--theme-red-filter: invert(1);
+
+	--theme-yellow-bg-color: var(--yellow-color);
+	--theme-yellow-color: var(--black-color);
+	--theme-yellow-grey-color: var(--grey-dark-color);
+	--theme-yellow-inverse-color: var(--white-color);
+	--theme-yellow-filter: invert(0);
+	
+	--theme-green-bg-color: var(--green-color);
+	--theme-green-color: var(--black-color);
+	--theme-green-grey-color: var(--grey-dark-color);
+	--theme-green-inverse-color: var(--white-color);
+	--theme-green-filter: invert(0);
+	
+	--theme-blue-bg-color: var(--blue-color);
+	--theme-blue-color: var(--white-color);
+	--theme-blue-grey-color: var(--grey-light-color);
+	--theme-blue-inverse-color: var(--black-color);
+	--theme-blue-filter: invert(1);
+
+	--theme-bg-color: var(--theme-light-bg-color);
+	--theme-color: var(--theme-light-color);
+	--theme-grey-color: var(--theme-light-grey-color);
+	--theme-inverse-color: var(--theme-light-inverse-color);
+	--theme-filter: var(--theme-light-filter);
+
+	--theme-transition-duration: 0.75s;
+	--theme-transition-function: ease;
+
+}
+
+body {
+    background-color: var(--theme-bg-color);
+	color: var(--theme-color);
+
+    transition: background-color var(--theme-transition-duration) var(--theme-transition-function),
+        color var(--theme-transition-duration) var(--theme-transition-function);
+}
+
+body.--theme-dark {
+	--theme-bg-color: var(--theme-dark-bg-color);
+	--theme-color: var(--theme-dark-color); 
+	--theme-grey-color: var(--theme-dark-grey-color); 
+	--theme-inverse-color: var(--theme-dark-inverse-color);
+	--theme-filter: var(--theme-dark-filter);
+}
+
+body.--theme-light {
+	--theme-bg-color: var(--theme-light-bg-color);
+	--theme-color: var(--theme-light-color); 
+	--theme-grey-color: var(--theme-light-grey-color); 
+	--theme-inverse-color: var(--theme-light-inverse-color);
+	--theme-filter: var(--theme-light-filter);
+}
+
+body.--theme-red {
+	--theme-bg-color: var(--theme-red-bg-color);
+	--theme-color: var(--theme-red-color); 
+	--theme-grey-color: var(--theme-red-grey-color); 
+	--theme-inverse-color: var(--theme-red-inverse-color);
+	--theme-filter: var(--theme-red-filter);
+}
+
+body.--theme-yellow {
+	--theme-bg-color: var(--theme-yellow-bg-color);
+	--theme-color: var(--theme-yellow-color); 
+	--theme-grey-color: var(--theme-yellow-grey-color); 
+	--theme-inverse-color: var(--theme-yellow-inverse-color);
+	--theme-filter: var(--theme-yellow-filter);
+}
+
+body.--theme-green {
+	--theme-bg-color: var(--theme-green-bg-color);
+	--theme-color: var(--theme-green-color); 
+	--theme-grey-color: var(--theme-green-grey-color); 
+	--theme-inverse-color: var(--theme-green-inverse-color);
+	--theme-filter: var(--theme-green-filter);
+}
+
+body.--theme-blue {
+	--theme-bg-color: var(--theme-blue-bg-color);
+	--theme-color: var(--theme-blue-color); 
+	--theme-grey-color: var(--theme-blue-grey-color); 
+	--theme-inverse-color: var(--theme-blue-inverse-color);
+	--theme-filter: var(--theme-blue-filter);
+}

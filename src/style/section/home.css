@@ -1,0 +1,155 @@
+#TPL__Home {
+	margin: 0 auto;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 12.5vh;
+	position: relative;
+}
+
+#TPL__Home > * {
+	flex: 1 1 auto;
+	z-index: 100;
+}
+
+.DS__Logo {
+	background-color: var(--yellow-color);  
+	color: var(--black-color);
+
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	margin: 75px 0 0 auto;
+	width: 128px;
+	height: 128px;
+
+	font-size: 64px;
+	line-height: 1.1em;
+	letter-spacing: -3px;
+	border: 1px solid var(--black-color);
+}
+
+.DS__Logo.--appear {
+	animation: 3.2s linear 0s 1 normal both running DS__Chat_appear;
+}
+
+.DS__Logo.--talk {
+	animation: 0.5s linear 0s infinite normal both running DS__Chat_talk;
+}
+
+.DS__Logo h2 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 5px 10px;
+	animation: 0.5s linear 1s 1 normal both running DS__Opacity;
+	font-size: inherit;
+	margin: 0;
+}
+
+.DS__Messaging {
+	height: 75vh;
+	position: relative;
+}
+
+.DS__Messaging ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.DS__Messaging li {
+	max-width: 400px;
+	flex: 0 0 auto;
+	display: block;
+	list-style: none;
+	margin: 20px 0 0 35px;
+	padding: 10px 15px;
+	background-color: White;
+	border: 1px solid var(--black-color);
+	color: var(--black-color);
+	filter: opacity(20);
+	border-radius: 10px 10px 10px 0;
+	position: relative;
+	
+	animation: 0.5s ease-in 0s 1 normal both running DS__Chat_show;
+}
+
+.DS__Messaging li::before,
+.DS__Messaging li::after {
+	content: '';
+	position: absolute;
+	border-bottom: 15px solid var(--black-color);
+	border-left: 15px solid transparent;
+	width: 0;
+	height: 0;
+	bottom: -1px;
+	left: -16px;
+}
+
+.DS__Messaging li::after {
+	border-bottom-color: White;
+	bottom: 0;
+	left: -14px;
+}
+
+
+@media screen and (max-width: 640px) {
+	#TPL__Home {
+		padding: 25px;
+	}
+
+	#TPL__Home > * {
+		flex: 0 0 auto;
+	}
+
+	.DS__Logo {
+		margin: 0 auto;
+		width: 64px;
+		height: 64px;
+		font-size: 32px;
+	}
+
+	.DS__Logo.--appear {
+		animation: 3.5s linear 0s 1 normal both running DS__Chat_appear_phone;
+	}
+
+	.DS__Logo h2 {
+		padding: 2.5px 5px;
+	}
+
+	.DS__Messaging {
+		height: calc(100vh - 50px);
+		flex: 1 1 100% !important;
+	}
+
+	.DS__Messaging li {
+		max-width: calc(100% - 35px);
+	}
+}
+
+/*
+#TPL__Home::before {
+	content: '';
+	display: block;
+	height: 0;
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 0;
+	right: 0;
+	border-top: 2px dashed red;
+}
+
+#TPL__Home::after {
+	content: '';
+	display: block;
+	width: 0;
+	position: absolute;
+	left: calc(50% - 1px);
+	top: 0;
+	bottom: 0;
+	border-left: 2px dashed red;
+}
+*/

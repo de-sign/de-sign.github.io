@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800&display=swap');
+
+@import './style/utils.css';
+@import './style/theme.css';
+@import './style/animations.css';
+
+@import './style/section/home.css';
+@import './style/section/profil.css';
+@import './style/section/skill.css';
+@import './style/section/project.css';
+@import './style/section/address.css';
+@import './style/section/footer.css';
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+	font-family: "Segoe UI";
+	margin: 0;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+a {
+	color: var(--theme-color);
+	font-weight: bold;
+	text-decoration: underline solid var(--theme-grey-color);
+	transition: color var(--theme-transition-duration) var(--theme-transition-function),
+		text-decoration-color var(--theme-transition-duration) var(--theme-transition-function);
+}
+
+a.--discreet {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+i {
+	color: var(--theme-grey-color);
+	transition: color var(--theme-transition-duration) var(--theme-transition-function);
+}
