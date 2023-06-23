@@ -147,6 +147,10 @@
         display: none !important;
     }
 
+    .DS__Content .DS__Content {
+        padding: 25px 0;
+    }
+
 
     .DS__Flex.--phone {
         display: block;

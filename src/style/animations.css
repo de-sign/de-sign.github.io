@@ -118,6 +118,26 @@
 	}
 }
 
+@keyframes DS__Project_slide_tablet {
+	from {
+		margin-left: -50%;
+	}
+
+	to {
+		margin-left: 150%;
+	}
+}
+
+@keyframes DS__Project_slide_phone {
+	from {
+		margin-left: -100%;
+	}
+
+	to {
+		margin-left: 200%;
+	}
+}
+
 @keyframes DS__Address_appear {
 	from {
 		transform: translateY(100%);

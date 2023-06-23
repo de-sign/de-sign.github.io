@@ -75,7 +75,8 @@
 
 .DS__Project_Explain {
     max-width: 650px;
-    margin: 0 auto;
+    margin: 25px auto;
+    padding: 0 25px;
     max-height: 0;
     overflow: hidden;
     text-align: center;
@@ -111,4 +112,23 @@
 
 .DS__Project:hover .DS__Project_Explain {
     max-height: 350px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .DS__Project h1 {
+        animation-name: DS__Project_slide_tablet;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+    .DS__Project h1 {
+        animation-name: DS__Project_slide_phone;
+    }
+
+    .DS__Project:hover .DS__Project_Explain {
+        max-height: 500px;
+    }
 }
